@@ -5,7 +5,8 @@
 .topnav {
   background-color: #210b2c;
   overflow: hidden;
-  position: relative;
+  position: absolute;
+  width: 100%;
 }
 
 /* Style the links inside the navigation bar */
