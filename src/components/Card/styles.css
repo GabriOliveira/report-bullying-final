@@ -1,0 +1,59 @@
+@import url("../../assets/fonts/fonts.css");
+@import url("../../assets/colors/colors.css");
+
+.card-container-about {
+  
+  font-family: var(--josefin);
+  background-color: #007eab;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  opacity: 0.84;
+  min-width: 31%;
+  min-height: 195px;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 2%;
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.3);
+  border: 2px #210b2c solid;
+  letter-spacing: 1px;
+}
+
+.card-container {
+  font-family: var(--josefin);
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  min-width: 31%;
+  min-height: 195px;
+  border-radius: 10px;
+  padding: 1%;
+  box-shadow: 0 12px 12px rgba(0, 0, 0, 0.3);
+  color: #000;
+  text-align: center;
+  align-items: center;
+  justify-content: first baseline;
+  
+}
+
+.title-card {
+  font-weight: bold;
+  font-size: 26px;
+  word-break: break-all;
+  text-align: center;
+}
+
+.content-card {
+  font-size: 18px;
+  flex-wrap: wrap;
+  width: 450px;
+ 
+  
+}
+
+@media only screen and (max-width: 445px) {
+  .card-container {
+    width: 80%;
+  }
+}

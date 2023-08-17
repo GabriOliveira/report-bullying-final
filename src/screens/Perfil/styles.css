@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-fale-conosco {
+  min-height: 87.6%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, #007eab, #007eab, #210b2c );
+  color: aliceblue;
+  position: static;
+}
+
+.perfil-e-desc{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 35%;
+  text-align: center;
+}
+
+.perfil-e-desc img{
+  border-radius: 50%;
+  border: solid #210b2c79;
+}
+
+
+
+.txt-sent{
+  font-size: x-large;
+  padding-top: 10px;
+}

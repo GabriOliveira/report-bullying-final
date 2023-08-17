@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+@keyframes pula {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-fale-conosco {
+  min-height: 87.6%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, #007eab, #210b2c);
+
+  position: static;
+}
+
+.title-fale-conosco {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1%;
+  word-wrap: break-word;
+}
+
+.container-fale-conosco h1 {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.container-fale-conosco form {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container-fale-conosco form label {
+  display: none;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.form-group input,
+textarea {
+  border: none;
+  border-radius: 5px;
+  padding: 1%;
+  resize: none;
+}
+
+.form-group,
+.form-group-double,
+input::placeholder,
+textarea::placeholder {
+  color: rgb(100, 83, 122);
+  font-family: "Roboto", sans-serif;
+}
+.form-group textarea {
+  width: 100%;
+}
+.submit-group {
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.icon-area {
+  display: flex;
+  cursor: pointer;
+  background-color: #210b2c;
+  border-radius: 50px;
+  width: 15%;
+  border: none;
+  justify-content: center;
+  box-shadow: 0 12px 12px black;
+
+  padding: 2.2%;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+
+  align-items: center;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: larger;
+  font-weight: 800;
+}
+
+.icon-area:hover {
+  transform: translateY(10px);
+  box-shadow: 0 8px 12px black;
+}
+
+.engloba-botão {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-group-double {
+  display: flex;
+
+  margin: 10px 0;
+  min-width: 100%;
+  justify-content: space-between;
+}
+.input-double {
+  border: none;
+  border-radius: 5px;
+  padding: 1%;
+  width: 48%;
+}
+
+.circle-container {
+  width: 90%;
+  min-height: 80%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  text-align: center;
+}
+.circle {
+  display: flex;
+  text-decoration: none;
+  color: white;
+  font-size: x-large;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+
+  min-height: 80px;
+  min-width: 80px;
+  background-color: #007eab;
+  animation: pula 2s ease infinite;
+}
+
+@media only screen and (max-width: 420px) {
+  .container-fale-conosco {
+    background-color: var(--background-claro);
+  }
+  .container-fale-conosco form label {
+    display: contents;
+    color: #000000;
+  }
+
+  textarea {
+    background-color: var(--color-white);
+  }
+
+  .form-group > input::placeholder,
+  .form-group-double > input::placeholder {
+    color: transparent;
+  }
+  .form-group-double > {
+    background-color: var(--color-white);
+  }
+  .container-fale-conosco form {
+    width: 90%;
+  }
+  .container-fale-conosco h1 {
+    color: #fff;
+  }
+  .form-group-double {
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 3px 0;
+  }
+  .input-double {
+    width: 100%;
+    margin: 3px 0;
+  }
+
+  .input-double:nth-child(4) {
+    width: 70%;
+  }
+  .circle-container {
+    width: 90%;
+  }
+  .circle {
+    min-width: 45px;
+    min-height: 40px;
+    border-radius: 200px;
+  }
+}
+
+.barra-navegacao {
+  width: 100%;
+  background-color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 3rem;
+  font-family: var(--josefin);
+}
+.none {
+  display: none;
+}
+.barra-navegacao > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
